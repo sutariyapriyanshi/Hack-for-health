@@ -5,7 +5,7 @@ import pickle as pk
 import base64
 from PIL import Image
 
-im = Image.open('C:\\Users\\Priyanshi Sutariya\\python\\health\\lung.png')
+im = Image.open('lung.png')
 st.set_page_config(page_title="Heart Disease Predictor", page_icon = im)
 
 def get_base64(bin_file):
@@ -26,15 +26,15 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_background('C:\\Users\\Priyanshi Sutariya\\python\\health\\h.jpg')
+set_background('h.jpg')
 
 st.sidebar.title('Feature Selection Menu')
 choice = st.sidebar.radio("Select any",("Cardiovascular Disease Predictor","Disease Prescription"))
 
 if choice=="Cardiovascular Disease Predictor":
 
-    model = pk.load(open('C:\\Users\\Priyanshi Sutariya\\python\\health\\Cardiovascular_disease.pkl', 'rb'))    
-    data = pd.read_excel('C:\\Users\\Priyanshi Sutariya\\python\\health\\health_data.xlsx')
+    model = pk.load(open('Cardiovascular_disease.pkl', 'rb'))    
+    data = pd.read_excel('health_data.xlsx')
 
     st.header('Heart Disease Predictor')
 
