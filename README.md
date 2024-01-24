@@ -10,7 +10,7 @@
 
 <h3>Repository Link:</h3>https://github.com/sutariyapriyanshi/Hack-for-health
 
-<h3>WebApp URL:http://192.168.29.166:8501/</h3>
+<h3>WebApp URL:</h3>http://192.168.29.166:8501/
 
 <h3> It will use the <b>Gradient Boosting Model</b> for the predicting the Target value.</h3>
 1. Created thhe model using Gradient boosting algorithm <br>
